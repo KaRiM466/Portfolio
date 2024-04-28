@@ -1,0 +1,83 @@
+:root {
+    --main-color: #219C90;
+    --main-font-color: #C70039;
+    --main-word-color: #E9B824;
+    --other-main-color: rgb(255, 255, 255);
+    --background-color: #eee;
+    --main-transition: all .7s ease-in-out;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Skranji', cursive;
+}
+
+@media (min-width: 600px) and (max-width: 1030px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+
+/* Contact With Me */
+
+.container.contact-with-me {
+    margin-top: 100px;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 50px;
+}
+
+.container.contact-with-me .header-contact {
+    margin-bottom: 50px;
+    color: var(--main-font-color);
+    font-weight: 900;
+}
+
+.container.contact-with-me .row div {
+    margin: 20px auto;
+    transition: var(--main-transition);
+}
+
+.container.contact-with-me .row div:hover {
+    transform: scale(1.1);
+}
+
+.container.contact-with-me div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-word-color);
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.container.contact-with-me div a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .container.contact-with-me .row div a {
+        font-size: 9px;
+    }
+    .container.contact-with-me div a i {
+        font-size: 15px;
+    }
+}
